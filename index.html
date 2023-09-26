@@ -15,31 +15,86 @@
         </h1>
         <form action="#" class="main-form">
           <div class="main-form__control">
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" />
+            <label for="firstname"
+              >First Name<span aria-hidden="true">*</span></label
+            >
+            <input
+              type="text"
+              id="firstname"
+              placeholder="Enter your first name"
+              required
+              title="Please enter your first name."
+              aria-label="First Name"
+            />
           </div>
           <div class="main-form__control">
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" />
+            <label for="lastname"
+              >Last Name<span aria-hidden="true">*</span></label
+            >
+            <input
+              type="text"
+              id="lastname"
+              placeholder="Enter your last name"
+              required
+              title="Please enter your last name."
+              aria-label="Last Name"
+            />
           </div>
           <div class="main-form__control">
-            <label for="email">Email</label>
-            <input type="email" id="email" />
+            <label for="email">Email<span aria-hidden="true">*</span></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your valid email"
+              required
+              title="Please enter a valid email."
+              aria-label="Email"
+            />
           </div>
           <div class="main-form__control">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" />
+            <label for="phone"
+              >Phone Number<span aria-hidden="true">*</span></label
+            >
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone number"
+              required
+              minlength="10"
+              maxlength="10"
+              title="Please enter your phone number."
+              aria-label="Phone Number"
+            />
           </div>
           <div class="main-form__control">
-            <label for="password">Password</label>
-            <input type="password" id="password" />
+            <label for="password"
+              >Password<span aria-hidden="true">*</span></label
+            >
+            <input
+              type="password"
+              id="password"
+              placeholder="Create a password"
+              required
+              minlength="8"
+              title="Please create a password."
+              aria-label="Password"
+            />
           </div>
           <div class="main-form__control">
-            <label for="conf-password">Phone Number</label>
-            <input type="password" id="conf-password" />
+            <label for="conf-password"
+              >Confirm Password<span aria-hidden="true">*</span></label
+            >
+            <input
+              type="password"
+              id="conf-password"
+              placeholder="Confirm your password"
+              required
+              minlength="8"
+              title="Please confirm your password."
+              aria-label="Confirm Password"
+            />
           </div>
-
-          <button class="main-form__btn">Create Account</button>
+          <button class="main-form__btn" type="submit">Create Account</button>
         </form>
         <p class="content-right__txt">
           Already have an account?
