@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  /* outline: 1px dashed red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100dvh;
+  background-image: linear-gradient(
+      to left,
+      rgb(0, 0, 0) 20%,
+      rgb(0, 0, 0, 0.75),
+      transparent
+    ),
+    url(../assets/img/bg-img.jpg);
+  background-size: cover;
+  display: flex;
+}
+
+.container > * {
+  flex-basis: 100%;
+}
+
+.content-right {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.main-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.main-form__control {
+  flex-basis: calc(50% - 0.5rem);
+}
+
+.main-form__control > * {
+  display: block;
+  width: 100%;
+}
+
+.main-form__control > label {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.main-form__control > input {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #af0404;
+  color: #eeeeee;
+}
+
+.main-form__control > input:focus {
+  outline: none;
+}
+
+.main-form__btn {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  background-color: #af0404;
+  color: #eeeeee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.content-right__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.441rem;
+  width: 28ch;
+}
+
+.content-right__txt {
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 2;
+}
+
+.content-right__txt--link {
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 1rem;
+}
