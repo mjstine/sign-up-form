@@ -69,6 +69,15 @@
   outline: none;
 }
 
+.main-form__control > input:valid {
+  border-color: green;
+}
+
+.main-form__control > #firstname,
+.main-form__control > #lastname {
+  text-transform: capitalize;
+}
+
 .main-form__btn {
   font-size: 1rem;
   padding: 0.5em 1em;
